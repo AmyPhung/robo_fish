@@ -5,6 +5,7 @@ from picamera import PiCamera
 import rospy
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
+from std_msgs.msg import Int16
 import numpy as np
 import cv2
 
@@ -28,8 +29,8 @@ class ImageConverter:
         # self.cap.set(3, 640/2)
         # self.cap.set(4, 480/2)
 
-        self.bridge = CvBridge()
-        self.image_pub = rospy.Publisher("pi_camera", Image, queue_size=1)
+        # self.bridge = CvBridge()
+        # self.image_pub = rospy.Publisher("pi_camera", Image, queue_size=1)
 
     def run(self):
         # capture frames from the camera
@@ -59,11 +60,12 @@ class ImageConverter:
 
             mask = cv2.inRange(gray,lower,upper)
             cnts,hie = cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
-            cv2.drawContours(image,cnts,-1,(0,255,0),3)
+            # cv2.drawContours(image,cnts,-1,(0,255,0),3)
 
             # Publish
-            image_message = self.bridge.cv2_to_imgmsg(image, encoding="rgb8")
-            self.image_pub.publish(image_message)
+            # image_message = self.bridge.cv2_to_imgmsg(image, encoding="rgb8")
+            # self.image_pub.publish(image_message)
+            print("here")
 
 
             # Exit when ROS shuts down
