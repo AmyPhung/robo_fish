@@ -6,7 +6,8 @@ SERVO_CENTER = 90
 # Maximum degree amount below or past center to move
 # Important for preventing hardware failures from servo hitting endstops
 # and stalling
-MAX_SERVO_RANGE = 27
+MAX_SERVO_RANGE = 45
+# MAX_SERVO_RANGE = 27
 
 # GPIO Pin to use
 SERVO_PIN = 18
@@ -58,7 +59,7 @@ class TailController:
             self.servo_min_setpoint)
 
     def servoMaxSetpointCB(self, msg):
-        self.servo_max_range = msg.data
+        self.servo_max_setpoint = msg.data
         self.servo_max_setpoint = self.checkEndstops(self.servo_max_setpoint)
         rospy.loginfo("Setting maximum servo setpoint to %3d",
             self.servo_max_setpoint)
@@ -74,6 +75,7 @@ class TailController:
         if deg_input < SERVO_CENTER - MAX_SERVO_RANGE:
             return SERVO_CENTER - MAX_SERVO_RANGE
         elif deg_input > SERVO_CENTER + MAX_SERVO_RANGE:
+
             return SERVO_CENTER + MAX_SERVO_RANGE
         else:
             return deg_input
@@ -96,7 +98,6 @@ class TailController:
                 # Servo range goes from 0 to 190
                 # GPIO Library expects command to be between 1000 and 2000
                 pwm = self.intRemap(deg, 0, 180, 1000, 2000)
-                print(pwm)
 
                 if not OFFBOARD_DEBUG:
                     self.pi.set_servo_pulsewidth(SERVO_PIN, pwm)
