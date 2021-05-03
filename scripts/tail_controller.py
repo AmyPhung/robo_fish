@@ -11,11 +11,11 @@ MAX_SERVO_RANGE = 27
 # GPIO Pin to use
 SERVO_PIN = 18
 
-# Minimum servo delay for 1 degree increments (in ms)
-MIN_SERVO_DELAY = 15
+# Minimum servo delay for end-to-end sweep (in ms)
+MIN_SERVO_DELAY = 500
 
 # For convenience - disables pi-specific code for offboard debugging
-OFFBOARD_DEBUG = False
+OFFBOARD_DEBUG = True
 
 import rospy
 from std_msgs.msg import Int16
@@ -37,8 +37,8 @@ class TailController:
         # Default to straight ahead
         self.servo_min_setpoint = 90
         self.servo_max_setpoint = 90
-        # Number of milliseconds to wait between 10 degree increments
-        self.servo_delay = 30
+        # Number of milliseconds to wait between movement
+        self.servo_delay = 1000
 
         # Setup subscribers
         self.min_setpoint_sub = rospy.Subscriber("servo_min_setpoint",
@@ -47,6 +47,7 @@ class TailController:
             Int16, self.servoMaxSetpointCB)
         self.cmd_sub = rospy.Subscriber("servo_delay",
             Int16, self.servoDelayCB)
+
 
         rospy.loginfo("tail_controller node initialized")
 
@@ -85,8 +86,7 @@ class TailController:
 
     def run(self):
         while not rospy.is_shutdown():
-            for deg in range(self.servo_min_setpoint,
-                             self.servo_max_setpoint + 1):
+            for deg in (self.servo_min_setpoint, self.servo_max_setpoint):
                 # Technically shouldn't be necessary, but just in case
                 deg = self.checkEndstops(deg)
 
@@ -96,7 +96,7 @@ class TailController:
                 print(pwm)
 
                 if not OFFBOARD_DEBUG:
-                    self.pi.set_servo_pulsewidth(18, pwm)
+                    self.pi.set_servo_pulsewidth(SERVO_PIN, pwm)
 
                 rospy.sleep(self.servo_delay/1000)
 
