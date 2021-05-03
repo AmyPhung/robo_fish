@@ -1,41 +1,104 @@
 #!/usr/bin/env python3
-import time
+
+# Degree value for center of servo
+SERVO_CENTER = 90
+
+# Maximum degree amount below or past center to move
+# Important for preventing hardware failures from servo hitting endstops
+# and stalling
+MAX_SERVO_RANGE = 27
+
+# GPIO Pin to use
+SERVO_PIN = 18
+
+# Minimum servo delay for 1 degree increments (in ms)
+MIN_SERVO_DELAY = 15
+
+# For convenience - disables pi-specific code for offboard debugging
+OFFBOARD_DEBUG = False
+
 import rospy
 from std_msgs.msg import Int16
-import RPi.GPIO as GPIO
+
+if not OFFBOARD_DEBUG:
+    import pigpio
+
 
 class TailController:
     def __init__(self):
+        # TODO: Add "off mode"
 
         rospy.init_node('tail_controller')
 
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(18, GPIO.OUT)
-        self.pwm = GPIO.PWM(18, 100)
-        self.pwm.start(5)
+        if not OFFBOARD_DEBUG:
+            # Access raspi pins
+            self.pi = pigpio.pi()
 
-        self.cmd_sub = rospy.Subscriber("servo_cmd", Int16, self.servoCmdCB)
+        # Default to straight ahead
+        self.servo_min_setpoint = 90
+        self.servo_max_setpoint = 90
+        # Number of milliseconds to wait between 10 degree increments
+        self.servo_delay = 30
+
+        # Setup subscribers
+        self.min_setpoint_sub = rospy.Subscriber("servo_min_setpoint",
+            Int16, self.servoMinSetpointCB)
+        self.max_setpoint_sub = rospy.Subscriber("servo_max_setpoint",
+            Int16, self.servoMaxSetpointCB)
+        self.cmd_sub = rospy.Subscriber("servo_delay",
+            Int16, self.servoDelayCB)
+
         rospy.loginfo("tail_controller node initialized")
 
-    def servoCmdCB(self, msg):
-        # TODO: add rate limiting to this
-        angle_cmd = msg.data
+    def servoMinSetpointCB(self, msg):
+        self.servo_min_setpoint = msg.data
+        self.servo_min_setpoint = self.checkEndstops(self.servo_min_setpoint)
+        rospy.loginfo("Setting minimum servo setpoint to %3d",
+            self.servo_min_setpoint)
 
-        # Limit angle range
-        if angle_cmd < 0:
-            angle_cmd = 0
-        elif angle_cmd > 180:
-            angle_cmd = 180
+    def servoMaxSetpointCB(self, msg):
+        self.servo_max_range = msg.data
+        self.servo_max_setpoint = self.checkEndstops(self.servo_max_setpoint)
+        rospy.loginfo("Setting maximum servo setpoint to %3d",
+            self.servo_max_setpoint)
 
-        rospy.loginfo("Setting servo angle to %2d", angle_cmd)
-        # Update servo position
-        duty = float(angle_cmd) / 10.0 + 2.5
-        self.pwm.ChangeDutyCycle(duty)
-        rospy.loginfo("Using duty cycle %5.1f", duty)
+    def servoDelayCB(self, msg):
+        self.servo_delay = msg.data
+        if self.servo_delay < MIN_SERVO_DELAY:
+            self.servo_delay  = MIN_SERVO_DELAY
+        rospy.loginfo("Setting servo delay to %4d", self.servo_delay)
+
+    def checkEndstops(self, deg_input):
+        # Prevent servo from driving past endstops
+        if deg_input < SERVO_CENTER - MAX_SERVO_RANGE:
+            return SERVO_CENTER - MAX_SERVO_RANGE
+        elif deg_input > SERVO_CENTER + MAX_SERVO_RANGE:
+            return SERVO_CENTER + MAX_SERVO_RANGE
+        else:
+            return deg_input
+
+    def intRemap(self, x, in_min, in_max, out_min, out_max):
+        """ Takes input x and rescales it to an output range.
+        Returns integer values"""
+        return int((x-in_min)/(in_max-in_min)*(out_max-out_min) + out_min)
+
 
     def run(self):
         while not rospy.is_shutdown():
-            pass
+            for deg in range(self.servo_min_setpoint,
+                             self.servo_max_setpoint + 1):
+                # Technically shouldn't be necessary, but just in case
+                deg = self.checkEndstops(deg)
+
+                # Servo range goes from 0 to 190
+                # GPIO Library expects command to be between 1000 and 2000
+                pwm = self.intRemap(deg, 0, 180, 1000, 2000)
+                print(pwm)
+
+                if not OFFBOARD_DEBUG:
+                    self.pi.set_servo_pulsewidth(18, pwm)
+
+                rospy.sleep(self.servo_delay/1000)
 
 if __name__ == '__main__':
     tail_controller = TailController()
