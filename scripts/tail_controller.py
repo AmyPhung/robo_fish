@@ -81,6 +81,9 @@ class TailController:
     def intRemap(self, x, in_min, in_max, out_min, out_max):
         """ Takes input x and rescales it to an output range.
         Returns integer values"""
+        # Convert everything to floats - necessary for python 2
+        x, in_min, in_max, out_min, out_max = \
+            float(x), float(in_min), float(in_max), float(out_min), float(out_max)
         return int((x-in_min)/(in_max-in_min)*(out_max-out_min) + out_min)
 
 
