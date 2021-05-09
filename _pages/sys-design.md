@@ -9,3 +9,4 @@ sidebar:
 # Test
 ## Test2
 ## Test3
+"...the **go to** statement should be abolished..." [[1]](/references#1).
