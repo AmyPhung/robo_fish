@@ -20,11 +20,11 @@ docs:
   - title: Project Technical Info
     children:
       - title: "Soft Tail Design"
-        url: /subsys-actuate/
-      - title: "Actuation"
-        url: /subsys-software/
-      - title: "Software"
         url: /subsys-tail/
+      - title: "Actuation"
+        url: /subsys-actuate/
+      - title: "Software"
+        url: /subsys-software/
   - title: Other Info
     children:
       - title: "Conclusions & Future Work"

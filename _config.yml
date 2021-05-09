@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "SoFi-Mini"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Amy Phung, Everardo Gonzalez, Nathan Faber"
+name                     : "Amy Phung, Everardo Gonzalez, & Nathan Faber"
 description              : "Website documenting our work on creating a soft robotic fish."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
