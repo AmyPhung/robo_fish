@@ -1,7 +1,12 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Robotics System Design"
+    url: /sys-design/
+  - title: "About Us"
+    url: /about/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +15,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: Project Technical Info
+    children:
+      - title: "Soft Tail Design"
+        url: /subsys-actuate/
+      - title: "Actuation"
+        url: /subsys-software/
+      - title: "Software"
+        url: /subsys-tail/
+  - title: Other Info
+    children:
+      - title: "Conclusions & Future Work"
+        url: /conclusion/
+      - title: "References"
+        url: /references/
