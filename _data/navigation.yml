@@ -25,6 +25,8 @@ docs:
         url: /subsys-actuate/
       - title: "Software"
         url: /subsys-software/
+      - title: "Waterproofing"
+        url: /waterproofing/
   - title: Other Info
     children:
       - title: "Conclusions & Future Work"
