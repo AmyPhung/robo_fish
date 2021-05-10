@@ -43,7 +43,7 @@ Software Control Flow Diagram for Arduino
 </div> 
 </center>
 <center>
-<img src="/robo_fish/img/software_ardunio_runnning.png" width="100%" height="100%"> <br/> 
+<img src="/robo_fish/img/software_ardunio_running.png" width="100%" height="100%"> <br/> 
 <div class="caption"> 
 Editing parameters during runtime with an Ardunio simulator
 </div> 
