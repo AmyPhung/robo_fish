@@ -35,8 +35,19 @@ Electrical diagram for single pump and servo design
 
 
 #### Testing Scripts and Control Development
-Due to the fact that the development of the fish was happening in multiple places at once. We opted for a barebones testing script to be written in/for Arduino since none of us had experience using the GPIO pins on the RPI and we all had experience with Arduinos. The testing script developed was meant to help understand what settings should be used for a final fish tail operation. This includes everything about how the tail actuates. The script was written in such a way that the pump flow-rate, duration/cycle speed, and delays could change via user input(shown below).
-![Picture of serial monitor arduino](/sdgdsfgsdf)
+Due to the fact that the development of the fish was happening in multiple places at once. We opted for a barebones testing script to be written in/for Arduino since none of us had experience using the GPIO pins on the RPI and we all had experience with Arduinos. The testing script developed was meant to help understand what settings should be used for a final fish tail operation. This includes everything about how the tail actuates. The script was written in such a way that the pump flow-rate, duration/cycle speed, and delays could change via user input see the below flow diagram and screen grab of the code running.
+<center>
+<img src="/robo_fish/img/software_control_flow.jpg" width="100%" height="100%"> <br/> 
+<div class="caption"> 
+Software Control Flow Diagram for Arduino
+</div> 
+</center>
+<center>
+<img src="/robo_fish/img/software_arduino_runnning.png" width="100%" height="100%"> <br/> 
+<div class="caption"> 
+Editing parameters during runtime with an Ardunio simulator
+</div> 
+</center>
 
 After this base code was running exploration into the control via RPI was explored. There are several GPIO libraries intended to make interfacing with the GPIO pins in Python easier. [GPIO Zero](https://gpiozero.readthedocs.io/en/stable/) seemed to have reasonable documentation and looked to support all the features that I thought I would need and more. 
 
