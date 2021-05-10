@@ -83,7 +83,7 @@ Ever is the one who started this project and got us all hyped up to work on a ro
        <div class="content">
            <center>
                <p>
-Amy Phung will probably solve climate change some day, but for now, she’s enjoying the finer things in life, like coffee ice cream and grad school applications. It’s worth noting that while she enjoys coffee ice cream, she does not enjoy coffee itself. While that may come as a shock, the real kicker is that she’s also a morning person. When she’s not found holding her iconic “Will develop robots for PhD” sign made of cardboard, she’s found developing robots for her BS and for her own amusement. Were we to implement the dodging algorithm in real life, it would probably go on her ROS-enabled Roomba. Yup, you read that right. She added ROS to a roomba.
+Amy Phung will probably solve climate change some day, but for now, she’s enjoying the finer things in life, like coffee ice cream and grad school applications. It’s worth noting that while she enjoys coffee ice cream, she does not enjoy coffee itself. While that may come as a shock, the real kicker is that she’s also a morning person. When she’s not found holding her iconic “Will develop robots for PhD” sign made of cardboard, she’s found developing robots for her BS and for her own amusement.
 </p>
            </center>
        </div>
