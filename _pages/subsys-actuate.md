@@ -4,6 +4,7 @@ permalink: /subsys-actuate/
 layout: posts
 sidebar:
   nav: "docs"
+
 ---
 
 In order to make our fish move, we need to find a way to physically actuate it and have it controllable by some sort of "brain." This page documents the various methods we tested to actuate our fish, and documents the results from creating each of these systems.
@@ -177,6 +178,11 @@ We tested a range of actuation frequencies and delays, and found that there was 
     <td>500 ms</td>
     <td><img src="/robo_fish/img/mid-freq-test-0.7h-500ms.gif" width="100%"></td>
   </tr>
+  <tr>
+    <td>0.5 Hz</td>
+    <td>800 ms</td>
+    <td><img src="/robo_fish/img/low-freq-test-0.5h-800ms.gif" width="100%"></td>
+  </tr>
 </table>
 
 Unfortunately, we were unable to find values of actuation frequency and delays that allowed our fish to swim forwards - with a high frequency, the tail didn't actuate enough to generate thrust, and at low frequencies the tail movements were too far apart to translate to forwards motion.
@@ -196,11 +202,54 @@ For more information about the soft tail design and fabrication, visit this page
 For the code that we used to test this setup, visit our software subsystem page: [TODO]
 
 # Hard Tail Actuation
-submarine mode
+Although the primary focus of our project was to create a fish that swam with a soft robotic tail, we wanted to create a fish that could swim in a controlled manner even if it meant not necessarily using the soft tail. This version of the fish replaced the soft tail with a servo-driven tail, which made it much easier to control. We left the two pumps installed in this version to serve a dual purpose: 1) as ballast, and 2) to enable faster swimming speeds than would otherwise be possible with the servo alone.
+
+<center>
+  <img src="/robo_fish/img/pumpv4-back_view.png" width="30%">
+  <br/>
+  <div class="caption">
+    Back view of the new tail assembly
+  </div>
+</center>
+
+<center>
+  <img src="/robo_fish/img/pumpv4-in_assem.png" width="70%">
+  <br/>
+  <div class="caption">
+    The new tail in context of the whole fish assembly
+  </div>
+</center>
+
+<center>
+  <img src="/robo_fish/img/Robosys - Hard Tail Testing Rig.jpg" width="80%">
+  <br/>
+  <div class="caption">
+    Wiring diagram for hard tail testing rig
+  </div>
+</center>
+
+
+### Testing & Results
+We were able to get a good swimming motion with the hard fishtail, and it was able to swim around the test bin despite being pulled back by the tether. Now that we had a fish swimming, we were able to fully realize the effect of the tether on the fish's dynamics - the tether acted a lot like a spring, and after de-powering the fish it would generally return to the same location it started in (unless the tether shifted while it was swimming).
+
+<center>
+  <img src="/robo_fish/img/hard-tail-actuation.gif" width="80%">
+  <br/>
+  <div class="caption">
+    Swimming robot fish with hard tail
+  </div>
+</center>
+
+Just for fun, we also wondered what would happen if we tried using only the pumps for swimming. This resulted in a very quick-moving fish, but it's motions were very different from a fish - at this point, it was basically a just a submarine.
+<center>
+  <img src="/robo_fish/img/sub-mode.gif" width="80%">
+  <br/>
+  <div class="caption">
+    Swimming robot fish in "submarine mode"
+  </div>
+</center>
+
+With this system, it should be very doable to make a fish that had completely on-board power and computing, which would allow us to control the fish without needing to account for how the tether influences its swimming pattern.
+
 
 [[1]](/references#1).
-
- design
-Switching pump design & results, analysis
-Soft tail actuation & results, analysis
-Hard tail actuation & results, analysis
