@@ -10,7 +10,7 @@ sidebar:
 In order to make our fish move, we need to find a way to physically actuate it and have it controllable by some sort of "brain." This page documents the various methods we tested to actuate our fish, and documents the results from creating each of these systems.
 
 # Switching Pump - Iteration 1
-SoFi, the robotic fish we are basing our project off, got good results from using a custom gear pump. However, they note that this method of actuation requires a lot of power to operate and is rather energy inefficient since it requires regularly switching the motor direction back and forth. [NEED CITATION] Since we only had access to consumer-grade 3D printers, we weren't confident in our print tolerances being sufficient to create a gear pump like in their design. In another one of their papers on SoFi, they discuss the potential for creating a pump design that could quickly switch the inlet and outlet flows by only using continuously rotating parts.[NEED CITATION]
+SoFi, the robotic fish we are basing our project off, got good results from using a custom gear pump. However, they note that this method of actuation requires a lot of power to operate and is rather energy inefficient since it requires regularly switching the motor direction back and forth [[1]](/references#1). Since we only had access to consumer-grade 3D printers, we weren't confident in our print tolerances being sufficient to create a gear pump like in their design. In another one of their papers on SoFi, they discuss the potential for creating a pump design that could quickly switch the inlet and outlet flows by only using continuously rotating parts [[2]](/references#2).
 
 The first thing we attempted to do was to re-create this setup, but customize the parts to fit the geometry of our half-scale fish body. We ultimately purchased this submersible 12V pump, since its flow rate and pressure (estimated from its rated max lift) seemed sufficient for our needs. ([Amazon link](https://www.amazon.com/gp/product/B07HQLVCRX/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1))
 <center>
@@ -21,7 +21,7 @@ The first thing we attempted to do was to re-create this setup, but customize th
   </div>
 </center>
 
-We then created a valve based on the design for a two-way valve attachment to a centrifugal pump as proposed in [NEED CITATION]. For this initial test, the valve was designed to be manually driven by a screwdriver or something similar, so we left a square hole where it would normally mount to a servo.
+We then created a valve based on the design for a two-way valve attachment to a centrifugal pump as proposed in [[2]](/references#2). For this initial test, the valve was designed to be manually driven by a screwdriver or something similar, so we left a square hole where it would normally mount to a servo.
 
 <center>
   <img src="/robo_fish/img/pumpv1-valve-front.png" width="30%">
@@ -95,7 +95,7 @@ Since we now needed to drive a servo, we needed to add a bit more complexity to 
 </center>
 
 ### Testing & Results
-Once again, we 3D printed these parts and tested the assembly in a large bucket of water. Putting this prototype together required waterproofing our servos since they weren't rated to be used underwater - for more information about that process, visit our page on waterproofing [TODO].  
+Once again, we 3D printed these parts and tested the assembly in a large bucket of water. Putting this prototype together required waterproofing our servos since they weren't rated to be used underwater - for more information about that process, visit our page on [waterproofing](/robo_fish/waterproofing/).  
 
 <center>
   <img src="/robo_fish/img/pumpv2-assembly.jpg" width="70%">
@@ -197,9 +197,9 @@ Unfortunately, we were unable to find values of actuation frequency and delays t
 
 After witnessing the extent to which leaks affected our pump's performance in the earlier pump iterations, we were surprised to find that we were limited by deflation rather than inflation rates. In hindsight though, this makes a lot of sense - with only one place for water to flow in and out of the chamber, the water will passively flow out of the chamber at a much slower rate than when a pump is actively pumping water in. In order to fix this design, we'd need to either find a way to actively pump water out of the chamber as quickly as we can pump it in, or add an outlet valve big enough to make the passive deflation rate match the active inflation rate.
 
-For more information about the soft tail design and fabrication, visit this page: [TODO]
+For more information about the soft tail design and fabrication, visit this page: [Soft Tail Design](/robo_fish/subsys-tail/)
 
-For the code that we used to test this setup, visit our software subsystem page: [TODO]
+For the code that we used to test this setup, visit our software subsystem page: [Software Subsystem](/robo_fish/subsys-software/)
 
 # Hard Tail Actuation
 Although the primary focus of our project was to create a fish that swam with a soft robotic tail, we wanted to create a fish that could swim in a controlled manner even if it meant not necessarily using the soft tail. This version of the fish replaced the soft tail with a servo-driven tail, which made it much easier to control. We left the two pumps installed in this version to serve a dual purpose: 1) as ballast, and 2) to enable faster swimming speeds than would otherwise be possible with the servo alone.
@@ -250,6 +250,3 @@ Just for fun, we also wondered what would happen if we tried using only the pump
 </center>
 
 With this system, it should be very doable to make a fish that had completely on-board power and computing, which would allow us to control the fish without needing to account for how the tether influences its swimming pattern.
-
-
-[[1]](/references#1).
