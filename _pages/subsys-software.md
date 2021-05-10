@@ -54,7 +54,9 @@ After this base code was running exploration into the control via RPI was explor
 After some trial and error we were able to interface with the MOSFET drivers via several of the PWM pins on the Pi. This system was fleshed out to have control over the fish’s tail parameters (similarly to the aforementioned Arduino code) and was at a point ready for operation on the fish. The processing of the pi camera image was not done yet, but there were a worth of [examples](https://picamera.readthedocs.io/en/release-1.13/) that we did not devote time to it.
  
 __The final code can be accessed here:__
+
 [Arduino Sketch](/robo_fish/img/fish.py")
+
 [Pi Zero Python](/robo_fish/img/serail.ino")
 
 #### Waterproofing and Hull Design
