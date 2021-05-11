@@ -11,6 +11,7 @@ Seeing as we the entire system will be underwater there are several parts that n
 Waterproofing our control system is essential for the robot fish. There are several considerations around how to waterproof the microcontroller and associated electronics. 
 Our primary design constraints regarded that the housing needed to be 3d printed and fit within the size constraints of our fish.
 
+#### Dome Head (V1)
 Originally we planned to divide the fish into 3 sections laterally in which the head would be a dome shape and would house the electronics. This also fits well with the positioning of the camera in the front. At this stage we were hoping to make this hull disassemblable via a gasket seal and machine screws. We went so far as to CAD a model of this that would allow us to mold a silicone seal to fit the pi within a dome shaped head.
  
 
@@ -26,6 +27,7 @@ Originally we planned to divide the fish into 3 sections laterally in which the 
 
 As the pump design was also developed we realized that the head would not have this much space. We also realized that the space constraints made it increasingly difficult to fit our electronics in the space while leaving room for a gasket. The gains from using a gasket ended up being smaller than the risks and design effort so we switched to building a model which would be sealed with epoxy. The electronics would be powered via a tether and programmed via Wifi above water!
 
+#### Top Head (V2)
 We also realized that there was a significant amount of unused space on the top of the fish. This space would be ideal for a dry hull as the fish’s roll stability is helped if the top parts are buoyant.  This led to a new 3 piece design(V2) that can be sealed via epoxy, fit 2 Mosfets, the Pi, and the camera. These pieces are sealed via epoxy and a clear piece of plastic is epoxied in front of the camera. The tether wires and hole/spout are sealed via epoxy as well.
 
 <center>
@@ -41,7 +43,7 @@ We printed this design and did some tests to make sure our electronics would fit
 
 <center>
   <img src="/robo_fish/img/head_fit.gif" width="50%">
-  <img src="/robo_fish/img/head_water_test.jpg" width="50%">
+  <img src="/robo_fish/img/head_water_test.jpeg" width="50%">
   <br/>
   <div class="caption">
     Fitting the electronics and testing if the prints were waterproof(they are!)
