@@ -67,7 +67,7 @@ Y. Zhong, Z. Li and R. Du, "A Novel Robot Fish With Wire-Driven Active Body and 
 A. K. Saha et al., "A low cost remote controlled underwater rover using raspberry Pi," 2018 IEEE 8th Annual Computing and Communication Workshop and Conference (CCWC), 2018, pp. 769-772, doi: 10.1109/CCWC.2018.8301657. <https://ieeexplore-ieee-org.olin.idm.oclc.org/document/8301657?arnumber=8301657>
 - Similar scope to our project, tethered video feed and power
 - Integrates several other sensors
-- Measuring depth/pressure underwater would require waterproofed pressure sensors
+- Measuring depth/pressure underwater ttps://github.com/AmyPhung/robo_fishwould require waterproofed pressure sensors
 
 <a id="13">[13]</a>
 “Pneumatic Networks for Soft Robotics That Actuate Rapidly.” Soft Robotics Toolkit. <https://softroboticstoolkit.com/publications/pneumatic-networks-soft-robotics-actuate-rapidly>
@@ -76,3 +76,8 @@ A. K. Saha et al., "A low cost remote controlled underwater rover using raspberr
 <a id="14">[14]</a>
 “Towards a Soft Pneumatic Glove for Hand Rehabilitation.” Soft Robotics Toolkit. <https://softroboticstoolkit.com/publications/towards-soft-pneumatic-glove-hand-rehabilitation>
 - Design documented here helped improve the degree of actuation of our soft tail design 
+
+
+<a id="15">[15]</a>
+“Hydraulic Autonomous Soft Robotic Fish for 3D Swimming. <http://robert.katzschmann.eu/wp-content/uploads/2017/08/katzschmann2014hydraulic.pdf>
+- Design documented here helped us design our soft tails
