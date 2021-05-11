@@ -5,9 +5,9 @@ layout: posts
 sidebar:
   nav: "docs"
 ---
-Seeing as we the entire system will be underwater there are several parts that needed waterproofing. These can largely be split into a dry hull that houses the electronics and separate waterproofing of the pump system (valve and servo).
+Seeing as we the entire system will be underwater there are several parts that needed waterproofing. These can largely be split into a __dry hull that houses the electronics__ and a separate __waterproofing of the pump system (valve and servo)__.
 
-## Electronic Waterproofing
+## Electronics Hull Waterproofing
 Waterproofing our control system is essential for the robot fish. There are several considerations around how to waterproof the microcontroller and associated electronics. 
 Our primary design constraints regarded that the housing needed to be 3d printed and fit within the size constraints of our fish.
 
