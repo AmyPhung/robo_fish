@@ -10,7 +10,7 @@ sidebar:
 In order to make our fish move, we need to find a way to physically actuate it and have it controllable by some sort of "brain." This page documents the various methods we tested to actuate our fish, and documents the results from creating each of these systems.
 
 # Switching Pump - Iteration 1
-SoFi, the robotic fish we are basing our project off, got good results from using a custom gear pump. However, they note that this method of actuation requires a lot of power to operate and is rather energy inefficient since it requires regularly switching the motor direction back and forth [[1]](/references#1). Since we only had access to consumer-grade 3D printers, we weren't confident in our print tolerances being sufficient to create a gear pump like in their design. In another one of their papers on SoFi, they discuss the potential for creating a pump design that could quickly switch the inlet and outlet flows by only using continuously rotating parts [[2]](/references#2).
+SoFi, the robotic fish we are basing our project off, got good results from using a custom gear pump. However, they note that this method of actuation requires a lot of power to operate and is rather energy inefficient since it requires regularly switching the motor direction back and forth [[1]](/robo_fish/references#1). Since we only had access to consumer-grade 3D printers, we weren't confident in our print tolerances being sufficient to create a gear pump like in their design. In another one of their papers on SoFi, they discuss the potential for creating a pump design that could quickly switch the inlet and outlet flows by only using continuously rotating parts [[2]](/robo_fish/references#2).
 
 The first thing we attempted to do was to re-create this setup, but customize the parts to fit the geometry of our half-scale fish body. We ultimately purchased this submersible 12V pump, since its flow rate and pressure (estimated from its rated max lift) seemed sufficient for our needs. ([Amazon link](https://www.amazon.com/gp/product/B07HQLVCRX/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1))
 <center>
@@ -21,7 +21,7 @@ The first thing we attempted to do was to re-create this setup, but customize th
   </div>
 </center>
 
-We then created a valve based on the design for a two-way valve attachment to a centrifugal pump as proposed in [[2]](/references#2). For this initial test, the valve was designed to be manually driven by a screwdriver or something similar, so we left a square hole where it would normally mount to a servo.
+We then created a valve based on the design for a two-way valve attachment to a centrifugal pump as proposed in [[2]](/robo_fish/references#2). For this initial test, the valve was designed to be manually driven by a screwdriver or something similar, so we left a square hole where it would normally mount to a servo.
 
 <center>
   <img src="/robo_fish/img/pumpv1-valve-front.png" width="30%">
