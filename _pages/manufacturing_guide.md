@@ -1,4 +1,4 @@
-# Tail Manufacturing Guide
+# Soft Tail Manufacturing Guide
 To manufacture a tail, follow this guide from top to bottom. Each section assumes that you have completed the previous sections. If a print is listed once in one section, and once in another, it means you’ll need to print another one.
 
 Here is a public link to the CAD on OnShape: https://cad.onshape.com/documents/fe4b32406be11c09bbe7cdbf/w/299111820bac3caaa051841e/e/472fa33427866a6de1dbed42
