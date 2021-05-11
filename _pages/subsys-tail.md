@@ -5,9 +5,9 @@ layout: posts
 sidebar:
   nav: "docs"
 ---
-## Tail Design
+## Soft Tail Design
 <center>
-  <img src="/robo_fish/img/Soft-Tail-CAD.png" width="40%" height="40%">
+  <img src="/robo_fish/img/Soft-Tail-CAD.png" width="80%" height="80%">
   <br/>
   <div class="caption">
     Figure 1: Left: Our full soft tail with rigid fin | Right: inside of our soft half-tail with a rigid fin
@@ -17,10 +17,10 @@ sidebar:
 Our overall tail design is shown in Figure 1. The blue and orange sections are made of silicone, which is what makes the tail soft. The green part is a rigid fin at the end of the tail. Not pictured is a center constraint layer between the two flat orange sections composed of two pieces of hardstock taped together.
 
 <center>
-  <img src="/robo_fish/img/SoFi-Tail-Info.png" width="40%" height="40%">
+  <img src="/robo_fish/img/SoFi-Tail-Info.png" width="80%" height="80%">
   <br/>
   <div class="caption">
-    Figure 2: Left: SoFi's tail design | Right: SoFi's tail actuation. Images from [[15]](/robo_fish/references#15)
+    Figure 2: Left: SoFi's tail design | Right: SoFi's tail actuation. Images from [15]
   </div>
 </center>
 
@@ -34,7 +34,7 @@ Another key difference is the rib thickness. The ribs of our tail are thicker th
 
 The actual physics behind how our tail actuates is identical to SoFi’s, with the exception that we did not use a gear pump to actuate our tail. By pressurizing one chamber more than the other, we cause a deflection in the tail that makes the tail curve. By switching which side is pressurized, we can make the tail swing back and forth like a fish’s tail.
 
-## Experiment Setup
+## Soft Tail Optimization
 Initial pump tests with our first soft tail showed that our pumps produced far more pressure than necessary to pressurize our tail, and that our limiting factor in soft tail actuation was actually the time necessary to depressurize a chamber. Based on those initial tests, we aimed to create a soft tail optimized to maximize the deflection for change in water volume, and minimize the time required to passively depressurize, or “deflate”. This would result in a tail that could quickly sway side to side.
 
 We decided to manufacture and test 3 different soft tails. These were the 3 tails we tested, with callouts to what was unique about each tail<sub></sub>. Note that “shell” refers to the silicone that encapsulates the tail.
@@ -47,7 +47,7 @@ We chose to vary these parameters in particular to achieve the optimizations we 
 
 
 <center>
-  <img src="/robo_fish/img/Soft-Tail-Test-Diagram.png" width="40%" height="40%">
+  <img src="/robo_fish/img/Soft-Tail-Test-Diagram.png" width="80%" height="80%">
   <br/>
   <div class="caption">
     Figure 3: This diagram depicts the essential components of our testing setup
@@ -57,7 +57,7 @@ We chose to vary these parameters in particular to achieve the optimizations we 
 Figure 3 shows how we planned to set up our experiments. The syringes would make it easy to measure the change in volume of the chambers. By adding some kind of tiled surface below the tail and capturing photos or video from overhead, we could measure the deflection of the tail for different volumes of water. Timing the deflation time became trivial as all we needed to do was pressurize a chamber, and time how long it takes for the chamber to push the water back into the syringe.
 
 <center>
-  <img src="/robo_fish/img/tail-full-rig.jpg" width="40%" height="40%">
+  <img src="/robo_fish/img/tail-full-rig.jpg" width="60%" height="60%">
   <br/>
   <div class="caption">
     Figure 4: Our testing rig
@@ -91,7 +91,7 @@ Figure 5 shows the overhead view of the tail in the testing rig from the camera 
 Figure 6 shows how we measured deflection for each tail. We calculated the angle between the center constraint of the tail and the front of the fin. This angle seemed to best capture the overall deflection of the tail. The following plots show how much deflection was achieved with each tail for different volumes of water added to each chamber.
 
 <center>
-  <img src="/robo_fish/img/Tail-1-deflection-plot.png" width="40%" height="40%">
+  <img src="/robo_fish/img/Tail-1-deflection-plot.png" width="60%" height="60%">
   <br/>
   <div class="caption">
     Figure 7: Tail 1 w/ 2 mm shell & 4 mm ribs results.
@@ -101,7 +101,7 @@ Figure 6 shows how we measured deflection for each tail. We calculated the angle
 In Figure 7 we can see the inflation results for the first tail. Unfortunately, the left chamber had a leak, so the recorded angle of deflection for the left chamber is not completely reliable as the water was leaking out of the chamber as recorded the angle of deflection. This tail had the highest angle of deflection for volume of water added into a chamber, capping out at 35 degrees, which was almost 10 degrees higher than the other tails.
 
 <center>
-  <img src="/robo_fish/img/Tail-2-deflection-plot.png" width="40%" height="40%">
+  <img src="/robo_fish/img/Tail-2-deflection-plot.png" width="60%" height="60%">
   <br/>
   <div class="caption">
     Figure 8: Tail 2 w/ 2 mm shell & 2 mm ribs results.
@@ -112,7 +112,7 @@ In Figure 8 we see the inflation results for the second tail. We can see that th
 
 
 <center>
-  <img src="/robo_fish/img/Tail-3-deflection-plot.png" width="40%" height="40%">
+  <img src="/robo_fish/img/Tail-3-deflection-plot.png" width="60%" height="60%">
   <br/>
   <div class="caption">
     Figure 9: Tail 3 w/ 3 mm shell & 2 mm ribs results.
@@ -127,7 +127,7 @@ From all of these results, we can conclude that the most effective tail, when op
 
 ### Deflation
 <center>
-  <img src="/robo_fish/img/Tail-2-deflection-plot.png" width="40%" height="40%">
+  <img src="/robo_fish/img/deflation-results.png" width="60%" height="60%">
   <br/>
   <div class="caption">
     Figure 10: Average deflation times for a single chamber for each tail
