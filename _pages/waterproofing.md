@@ -29,7 +29,7 @@ As the pump design was also developed we realized that the head would not have t
 We also realized that there was a significant amount of unused space on the top of the fish. This space would be ideal for a dry hull as the fish’s roll stability is helped if the top parts are buoyant.  This led to a new 3 piece design(V2) that can be sealed via epoxy, fit 2 Mosfets, the Pi, and the camera. These pieces are sealed via epoxy and a clear piece of plastic is epoxied in front of the camera. The tether wires and hole/spout are sealed via epoxy as well.
 
 <center>
-  <img src="/robo_fish/img/head.png="50%">
+  <img src="/robo_fish/img/head.png" width="50%">
   <img src="/robo_fish/img/head_exploded.png" width="50%">
   <br/>
   <div class="caption">
