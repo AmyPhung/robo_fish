@@ -42,8 +42,8 @@ We also realized that there was a significant amount of unused space on the top 
 We printed this design and did some tests to make sure our electronics would fit in the space and that the prints themselves were waterproof.
 
 <center>
-  <img src="/robo_fish/img/head_fit.gif" width="50%">
-  <img src="/robo_fish/img/head_water_test.jpeg" width="50%">
+  <img src="/robo_fish/img/head_fit.gif" width="40%">
+  <img src="/robo_fish/img/head_water_test.jpeg" width="40%">
   <br/>
   <div class="caption">
     Fitting the electronics and testing if the prints were waterproof(they are!)
