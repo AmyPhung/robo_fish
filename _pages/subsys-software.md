@@ -16,12 +16,14 @@ Arduino Uno side-by-side with Raspberry Pi Zero
 </div> 
 </center>
 
-Our original design called for the control of a small servo in addition to a 12V centrifugal pump. Since we were designing the tail in tandem it was unclear the speed at which we would need to operate the pump and figured that it would be best if we were able to control it with a motor controller of sorts as opposed to on/off. Due to our size constraints we settled on using a MOSFET motor driver board that accepted a PWM(pulse width modulation) signal to output varying speeds of our pump this was smaller than any other driver boards that would handle our pump. This can be seen below, as the pump switches from full speed to half speed.
+Our original design called for the control of a small servo in addition to a 12V centrifugal pump. Since we were designing the tail in tandem it was unclear the speed at which we would need to operate the pump and figured that it would be best if we were able to control it with a motor controller of sorts as opposed to on/off. Due to our size constraints we settled on using a MOSFET motor driver board that accepted a PWM(pulse width modulation) signal to output varying speeds of our pump this was smaller than any other driver boards that would handle our pump. This can be seen below, as the pump switches from on to off and from full speed to half speed.
 
-<center> 
-<img src="/robo_fish/img/software_pump_control.gif" width="100%" height="100%"> <br/> 
+<center>   
+<img src="/robo_fish/img/pump_test.gif" width="50%">
+<img src="/robo_fish/img/software_pump_control.gif" width="50%" >
+<br/> 
 <div class="caption"> 
-Cycling of pump from 100% to 50% flow rate via MOSFET boards
+Cycling pump from on to off and from 100% to 50% flow rate via MOSFET boards
 </div> 
 </center>
 
