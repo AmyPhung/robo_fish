@@ -38,4 +38,4 @@ The fish is split into three subsystems as such: [Soft Tail subsystem](/subsys-t
 
 
 
-<!--"...the **go to** statement should be abolished..." [[1]](/references#1).-->
+"...the **go to** statement should be abolished..." [[1]](/references#1).
