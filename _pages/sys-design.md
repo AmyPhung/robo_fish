@@ -7,7 +7,7 @@ sidebar:
 ---
 As mentioned in the abstract of this project this project seeks to build a robotic fish with a range of capabilities. It was important to us that the fish lended itself to future applications in swarms and self contained/autonomous operation.
 
-As noted earlier this fish is closely based off of MIT’s Sofi [[1]](/references#1). We have designed our fish such that it is a ½ scale version of Sofi. The choice to do this is based on Sofi’s success and our hope to make use of existing work to streamline our design.
+As noted earlier this fish is closely based off of MIT’s Sofi [[1]](/robo_fish/references#1). We have designed our fish such that it is a ½ scale version of Sofi. The choice to do this is based on Sofi’s success and our hope to make use of existing work to streamline our design.
 
 ## Distinctions
 Seeing as we are operating with fewer resources than the Sofi researchers we have made several design changes. These key differences are captured here:
@@ -25,7 +25,7 @@ Seeing as we are operating with fewer resources than the Sofi researchers we hav
     System diagram showing subsytems
   </div>
 </center>
-The fish is split into three subsystems as such: [Soft Tail subsystem](subsys-tail), [Actuation/Pump subsystem](/robo_fish//subsys-actuate), [Software/Electronics subsystem](/robo_fish/subsys-software) 
+The fish is split into three subsystems as such: [Soft Tail subsystem](/robo_fish/subsys-tail), [Actuation/Pump subsystem](/robo_fish/subsys-actuate), [Software/Electronics subsystem](/robo_fish/subsys-software) 
 
 ## Fish CAD
 <center>
@@ -38,4 +38,4 @@ The fish is split into three subsystems as such: [Soft Tail subsystem](subsys-ta
 
 
 
-"...the **go to** statement should be abolished..." [[1]](/references#1).
+<!--"...the **go to** statement should be abolished..." [[1]](/robo_fish/references#1).-->
