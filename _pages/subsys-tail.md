@@ -5,9 +5,6 @@ layout: posts
 sidebar:
   nav: "docs"
 ---
-
-# Soft Tail Subsystem
-
 ## Tail Design
 <center>
   <img src="/robo_fish/img/Soft-Tail-CAD.png" width="40%" height="40%">
