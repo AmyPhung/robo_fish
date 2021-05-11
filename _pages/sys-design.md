@@ -25,7 +25,7 @@ Seeing as we are operating with fewer resources than the Sofi researchers we hav
     System diagram showing subsytems
   </div>
 </center>
-The fish is split into three subsystems as such: [Soft Tail subsystem](/subsys-tail), [Actuation/Pump subsystem](/subsys-actuate), [Software/Electronics subsystem](/subsys-software) 
+The fish is split into three subsystems as such: [Soft Tail subsystem](subsys-tail), [Actuation/Pump subsystem](/robo_fish//subsys-actuate), [Software/Electronics subsystem](/robo_fish/subsys-software) 
 
 ## Fish CAD
 <center>
