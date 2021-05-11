@@ -5,6 +5,19 @@ layout: posts
 sidebar:
   nav: "docs"
 ---
+
+<center>
+  <img src="/robo_fish/img/pumpv1-valve-front.png" width="30%">
+  <img src="/robo_fish/img/pumpv1-valve-back.png" width="30%">
+  <br/>
+  <div class="caption">
+    Front (Left) and back (Right) of the switching valve
+  </div>
+</center>
+
+
+
+
 Waterproofing became a necessary part of our project when we started using servos underwater. Buying waterproof servos off-the-shelf would have been quite pricey, and since we were only creating prototypes that would be in shallow water for short durations of time that seemed like an excessive expense for our limited budget.
 
 Our first attempt of waterproofing servos involved filling the servos to the brim with white lithium grease and hoping that the grease alone would be enough to keep water out of the servo.
