@@ -79,5 +79,9 @@ A. K. Saha et al., "A low cost remote controlled underwater rover using raspberr
 
 
 <a id="15">[15]</a>
-“Hydraulic Autonomous Soft Robotic Fish for 3D Swimming. <http://robert.katzschmann.eu/wp-content/uploads/2017/08/katzschmann2014hydraulic.pdf>
+“Hydraulic Autonomous Soft Robotic Fish for 3D Swimming." <http://robert.katzschmann.eu/wp-content/uploads/2017/08/katzschmann2014hydraulic.pdf>
 - Design documented here helped us design our soft tails
+
+<a id="16">[16]</a>
+“Soft Robotics Toolkit Website: Testing". <https://softroboticstoolkit.com/book/pneunets-testing>
+- Effect of Actuator Morphology on Pressure Requirements informed tail experiments.
