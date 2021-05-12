@@ -19,14 +19,17 @@ main:
 docs:
   - title: Project Technical Info
     children:
-      - title: "Soft Tail Design"
+      - title: "Soft Tail"
         url: /subsys-tail/
+      - title: "Manufacturing Guide for Soft Tails"
+        url: /soft_tail_manufacture/
       - title: "Actuation"
         url: /subsys-actuate/
       - title: "Software"
         url: /subsys-software/
       - title: "Waterproofing"
         url: /waterproofing/
+
   - title: Other Info
     children:
       - title: "Conclusions & Future Work"
