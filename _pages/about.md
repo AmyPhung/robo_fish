@@ -61,7 +61,7 @@ img {
        <div class="content">
            <center>
                <p >
-Ever is the one who started this project and got us all hyped up to work on a robot fish (want to file a complaint? send it to him!) He has mad skills with Pytorch, ROS, and ML, which was super useful in the machine-learning-powered-robot-vacuum-dodgeball project, but not so much in this one - but hey, he's got the CAD skills too to whip up a robotic fish model too (like pineapple dole whip). Fun facts: His favorite ice cream is Mint Chocolate Chip and his favorite web browser is Reddit
+Ever is the one who started this project and got us all hyped up to work on a robot fish (want to file a complaint? send it to him!) He has mad skills with Pytorch, ROS, and ML, which was super useful in the machine-learning-powered-robot-vacuum-dodgeball project, but not so much in this one - but hey, he's got the CAD skills too to whip up a robotic fish model too (like pineapple dole whip). Fun fact: His favorite ice cream is Mint Chocolate Chip and he's going to be working on swarm robots at Oregon State University next fall.
 </p>
            </center>
        </div>
@@ -83,7 +83,7 @@ Ever is the one who started this project and got us all hyped up to work on a ro
        <div class="content">
            <center>
                <p>
-Amy Phung will probably solve climate change some day, but for now, she’s enjoying the finer things in life, like coffee ice cream and grad school applications. It’s worth noting that while she enjoys coffee ice cream, she does not enjoy coffee itself. While that may come as a shock, the real kicker is that she’s also a morning person. When she’s not found holding her iconic “Will develop robots for PhD” sign made of cardboard, she’s found developing robots for her BS and for her own amusement.
+Amy was sold on this project as soon as she heard the words "robot" and "fish" in the same sentence. Having finished grad school applications, she can finally relax and look forward to working on more underwater robots through the MIT-WHOI Joint Program next fall. She likes coffee ice cream and ROS, but not coffee. Try and wrap your head around that!
 </p>
            </center>
        </div>
@@ -104,7 +104,7 @@ Amy Phung will probably solve climate change some day, but for now, she’s enjo
     <div class="double-col">
        <div class="content">
            <center>
- <p> Nathan is a self-proclaimed "coconut ice cream kind of guy" and hails from the great state of Oregon (and for some reason chose to go to a college that's buried under snow at the time of writing). He's an avid adventurer (I mean look at that #scenic #nature #hiking photo) and was voted to be the team's probably-the-least-couch-potato member. He's also a multi-talented and accomplished individual who does everything from biking to juggling to sailing, and somehow finds the time to also be a world-class roboticist on top of it all.</p>
+ <p> Nathan is a self-proclaimed "coconut ice cream kind of guy" and hails from the great state of Oregon. Why he chose to go to a college that routinely gets covered in snow, we have no idea. He's an avid adventurer (I mean look at that #scenic #nature #hiking photo) and was voted to be the team's probably-the-least-couch-potato member. He's also a multi-talented and accomplished individual who does everything from biking to juggling to sailing, and somehow finds the time to also be a world-class roboticist on top of it all. </p>
            </center>
        </div>
     </div>
