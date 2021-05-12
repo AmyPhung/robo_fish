@@ -57,7 +57,7 @@ feature_row:
 <h1> Abstract </h1>
 
 <div class="abstract">
-   Bio-inspired robots for ocean exploration is a rapidly evolving niche within robotics. Our project explored the first steps towards creating a novel robot fish heavily inspired by the size of BlueSwarm fish <a href="/references#7">[7]</a>, hydraulic soft-actuation of SoFi <a href="/references#2">[2]</a><a href="/references#15">[15]</a>, and various other robot fish<a href="/references#11">[11]</a><a href="/references#4">[4]</a> and soft robots <a href="/references#3">[3]</a><a href="/references#13">[13]</a><a href="/references#14">[14]</a>. The overall goal of this project was to prototype a self-contained, small robot fish with a rigid body and hydraulically actuated soft-tail capable of swimming in a closed testing environment. We prototyped and analyzed two hydraulic actuation methods, and characterized three soft tails in an attempt to create a robot fish with a soft tail. However, the challenges posed by our time constraints, manufacturing constraints, and remote work led us towards using a rigid tail in order to create a functional fish. We successfully designed and manufactured a robot fish with an interchangeable soft tail and rigid tail. This fish was fully self-contained except for the off-board power supply. The fish was capable of swimming forward with the rigid tail, but not with the soft tail. Further work would explore hydraulic soft-tail actuation on this fish with the use of advanced manufacturing tools, or explore ways to move the power supply into the fish to make our fish fully encapsulated.
+   Bio-inspired robots for ocean exploration is a rapidly evolving niche within robotics. Our project explored the first steps towards creating a novel robot fish heavily inspired by the size of BlueSwarm fish <a href="/robo_fish/references#7">[7]</a>, hydraulic soft-actuation of SoFi <a href="/robo_fish/references#2">[2]</a><a href="/robo_fish/references#15">[15]</a>, and various other robot fish<a href="/robo_fish/references#11">[11]</a><a href="/robo_fish/references#4">[4]</a> and soft robots <a href="/robo_fish/references#3">[3]</a><a href="/robo_fish/references#13">[13]</a><a href="/robo_fish/references#14">[14]</a>. The overall goal of this project was to prototype a self-contained, small robot fish with a rigid body and hydraulically actuated soft-tail capable of swimming in a closed testing environment. We prototyped and analyzed two hydraulic actuation methods, and characterized three soft tails in an attempt to create a robot fish with a soft tail. However, the challenges posed by our time constraints, manufacturing constraints, and remote work led us towards using a rigid tail in order to create a functional fish. We successfully designed and manufactured a robot fish with an interchangeable soft tail and rigid tail. This fish was fully self-contained except for the off-board power supply. The fish was capable of swimming forward with the rigid tail, but not with the soft tail. Further work would explore hydraulic soft-tail actuation on this fish with the use of advanced manufacturing tools, or explore ways to move the power supply into the fish to make our fish fully encapsulated.
 </div>
 
 <br>
@@ -67,7 +67,7 @@ feature_row:
  <div class="abstract">
    This project was heavily inspired by previous work with bio-inspired robot fish. The primary inspirations for this project were the BlueSwarm project and the SoFi project. We were interested in creating a robot fish that would combine the size of the BlueSwarm with the hydraulic soft actuation of SoFi.The development of this robot fish would be the first step towards a swarm of soft robot fish capable of exploring underwater environments while minimally disturbing wildlife.
 
-The size and swarm capabilities of the BlueSwarm fish make them a likely candidate for ocean exploration. In the future, these fish could be deployed in an underwater environment where each fish explores different areas, and the fish work together to complete a map of the environment. Even if a few fish fail, the swarm as a whole could still succeed in mapping out the environment. Similar techniques could be deployed to find and study ocean wildlife with a swarm like this. The hydraulic soft actuation of SoFi makes it another likely candidate for ocean exploration <a href="/references#1">[1]</a>. Its soft tail makes it less likely to accidentally disturb wildlife while exploring.
+The size and swarm capabilities of the BlueSwarm fish make them a likely candidate for ocean exploration. In the future, these fish could be deployed in an underwater environment where each fish explores different areas, and the fish work together to complete a map of the environment. Even if a few fish fail, the swarm as a whole could still succeed in mapping out the environment. Similar techniques could be deployed to find and study ocean wildlife with a swarm like this. The hydraulic soft actuation of SoFi makes it another likely candidate for ocean exploration <a href="/robo_fish/references#1">[1]</a>. Its soft tail makes it less likely to accidentally disturb wildlife while exploring.
 
 Since soft robotics is its own niche within robotics research, we were also intrigued by the idea of using research on soft robots in general as a means of modifying SoFi’s soft tail. Most notably, the Pneunets from the Soft Robotics Toolkit informed our experiments involving our soft tails.
 
@@ -80,16 +80,21 @@ Because this project was part of a robotics capstone course, the project was als
   <div class="abstract">
     The overall goal of our project was to create a robot fish that combined the hydraulic soft actuation of SoFi with the small size of BlueSwarm fish. However, we understood this might not be fully realizable within the time frame of this project, so our Minimum Viable Product (MVP) was to create a robot fish capable of swimming forward underwater with offboard computing and power. The fish needed to meet the following requirements, in the following order of priority.
 
-1. The fish must be an entire robot fish. This means it must be a system we can actually deploy underwater, and not just a test rig.
-2. The fish must have actuation capabilities onboard, but the power supply and computational equipment can remain offboard.
-3. The fish must swim forward.
-4. The fish must utilize the best of at least 3 different tail designs.
+<ol>
+  <li>The fish must be an entire robot fish. This means it must be a system we can actually deploy underwater, and not just a test rig.</li>
+  <li>The fish must have actuation capabilities onboard, but the power supply and computational equipment can remain offboard.</li>
+  <li>The fish must swim forward.</li>
+  <li>The fish must utilize the best of at least 3 different tail designs.</li>
+</ol>
     
 Our stretch goals revolved around building up the capabilities of our robot fish to make it more feasible for use in a swarm and ocean exploration. These were our key stretch goals, in no particular order.
 
-• The fish uses an onboard camera to perceive light and move towards it.
-• The fish has onboard LEDs that it can use for potentially communicating with other robot fish, similar to the BlueSwarm.
-• The fish has precision tail control that enables it to precisely maneuver through the water.
+<ul>
+  <li>The fish uses an onboard camera to perceive light and move towards it.</li>
+  <li>The fish has onboard LEDs that it can use for potentially communicating with other robot fish, similar to the BlueSwarm.</li>
+  <li>The fish has precision tail control that enables it to precisely maneuver through the water.
+</li>
+</ul>
 
 We met our original top 3 MVP goals through the development of our robot fish with the rigid tail. However, the nature of remote work and time necessary for manufacturing tails made our 4th requirement unattainable within our time frame. Fortunately, we were still able to test several tail designs on a test rig, but we were not able to characterize them in time to pick the best one, and manufacture it again in the location of the rest of our system. We tackled pieces of our stretch goals that might enable swarm behaviors in the future, but prioritized meeting our MVP goals.
 
