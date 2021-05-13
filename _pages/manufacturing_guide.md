@@ -9,6 +9,8 @@ To manufacture a tail, follow this guide from top to bottom. Each section assume
 
 [Link to OnShape CAD](https://cad.onshape.com/documents/fe4b32406be11c09bbe7cdbf/w/299111820bac3caaa051841e/e/472fa33427866a6de1dbed42)
 
+[Tail Manufacturing Time-Lapse](https://youtu.be/tsCmlnuUnFQ)
+
 ## Half-Tail
 Note: You’ll have to do this section twice. No need to print the required prints twice. 
 
