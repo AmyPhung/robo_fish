@@ -60,6 +60,3 @@ __The final code can be accessed here:__
 [Arduino Sketch](/robo_fish/img/fish.py")
 
 [Pi Zero Python](/robo_fish/img/serail.ino")
-
-#### Waterproofing and Hull Design
-
