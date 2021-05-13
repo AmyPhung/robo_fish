@@ -137,6 +137,8 @@ Moving to a 2-pump design also required a redesign of the fish body to include m
   </div>
 </center>
 
+[Fish Construction Timelapse](https://youtu.be/PljnsS-kC9Y)
+
 ### Testing & Results
 To protect our electronic components from the occasional water splash, we put the Arduino and MOSFET boards in a cardboard box. We added a switch to our 12V power supply that was readily accessible outside of the box for quick pump shut-off as an additional safety in case anything quickly went wrong. We also extended the pump power wires with extra long leads to keep the electronic box as far away from water as possible, which was pretty handy for testing. Here's what this circuitry looked like:
 <center>
